@@ -14,9 +14,9 @@ detallada del total de las importaciones de la empresa.
 www.drawio.com). (1 punto)
 3. Crear una Clase para cada objeto. (2 puntos)
 4. Crear los siguientes métodos: (3 puntos)
-a. Agregar Importación
-b. Suma total de importaciones
-c. Suma total por el número de productos y su precio unitario
+    a. Agregar Importación
+    b. Suma total de importaciones
+    c. Suma total por el número de productos y su precio unitario
 5. Instanciar cada objeto utilizando la instrucción new. (1 punto)
 6. Montar todo el desarrollo en webpack (3 puntos)
 

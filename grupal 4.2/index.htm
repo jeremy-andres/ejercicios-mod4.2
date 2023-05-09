@@ -9,7 +9,7 @@
     <title>Aduana</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #202161;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #202161;"> <!--Barra de navegación-->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Aduana de Chile</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,26 +24,115 @@
     </div>
 </nav>
 
-<main>
-    <form class="container my-4"> 
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombre de la empresa</label>
-            <input class="form-control" id="" >
-            <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+<main class="row">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+
+    <div class="accordion-item "> <!--Formulario para ingresar empresas-->
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Ingresar empresa exportadora
+        </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <form class="container my-4 py-2 col-sm-8 border rounded  "> 
+                <h2>Ingresar empresa exportadora</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">ID de registro</label>
+                    <input class="form-control" id="idRegistro">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre de la empresa</label>
+                    <input class="form-control" id="nombreEmpresa" >
+                    <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">RUT</label>
+                    <input class="form-control" id="rutEmpresa">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="" class="form-label">RUT</label>
-            <input class="form-control" id="">
+    </div>
+
+
+    <div class="accordion-item"> <!--Formulario para ingreso de importaciones -->
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Exportación de productos
+        </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <form class="container my-4 py-2 col-sm-8 border rounded  "> 
+                <h2>Exportación de productos</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">ID de importación</label>
+                    <input class="form-control" id="idImportacion">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Producto</label>
+                    <input class="form-control" id="nombreProducto" >
+                    <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Cantidad de Productos</label>
+                    <input class="form-control" id="cantidadProductos">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Precio unitario</label>
+                    <input class="form-control" id="precioUnitario">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+
+
+    <div class="accordion-item"> <!--3er item -->
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Registro de importaciones
+        </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <form class="container my-4 py-2 col-sm-8 border rounded  "> 
+                <h2>Registro de importaciones</h2>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Selecione la empresa</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Productos</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio Unitario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            
+                        </tr>
+                    </tbody>
+                </table>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+
+    </div>
 </main>
 
-<div class="container">
+<div class="container"> <!--Footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
 
