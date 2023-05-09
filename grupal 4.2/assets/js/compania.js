@@ -18,5 +18,9 @@ export class Compania {
     getSumaTotal() {
         return this.importaciones.reduce((total, importObj) => total + (importObj.numProductos * importObj.precioUnitario), 0);
     }
+    getInfo() {
+        let info = [ this.id, this.nombre, this.rut]
+        return console.log(info);
+    }
 }
 

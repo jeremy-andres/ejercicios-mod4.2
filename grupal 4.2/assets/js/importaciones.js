@@ -7,8 +7,8 @@ export class Importacion {
     }
 
     getResumen() {
-        let resumen = [this.id, this.producto, this.numProductos, this.precioUnitario]; 
-        return console.log(resumen);
+        let info = [this.id, this.producto, this.numProductos, this.precioUnitario]
+        return console.log(info);
     }
 }
 

@@ -37,11 +37,11 @@
             <form class="container my-4 py-2 col-sm-8 border rounded  "> 
                 <h2>Ingresar empresa exportadora</h2>
                 <div class="mb-3">
-                    <label for="" class="form-label">ID de registro</label>
+                    <label for="idRegistro" class="form-label">ID de registro</label>
                     <input class="form-control" id="idRegistro">
                 </div>
                 <div class="mb-3">
-                    <label for="" class="form-label">Nombre de la empresa</label>
+                    <label for="nombreEmpresa" class="form-label">Nombre de la empresa</label>
                     <input class="form-control" id="nombreEmpresa" >
                     <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
                 </div>
@@ -81,13 +81,13 @@
                     <label for="" class="form-label">Precio unitario</label>
                     <input class="form-control" id="precioUnitario">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="botonNuevaImportacion" type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
 
 
-    <div class="accordion-item"> <!--3er item -->
+    <div class="accordion-item"> <!--Tabla con registro-->
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
             Registro de importaciones
@@ -96,13 +96,14 @@
         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
             <form class="container my-4 py-2 col-sm-8 border rounded  "> 
                 <h2>Registro de importaciones</h2>
-                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <!-- <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Selecione la empresa</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
-                </select>
-                <table class="table">
+                </select> -->
+                <button id="mostrarImportaciones" type="submit" class="btn btn-primary">Mostrar</button>
+                <table class="table" id="tablaImportaciones"
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -112,19 +113,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2"></td>
-                            <td></td>
-                        </tr>
+                        
                     </tbody>
                 </table>
         </div>
@@ -151,7 +140,7 @@
     </footer>
 </div>
 
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
     <!--Bootstrap .js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
