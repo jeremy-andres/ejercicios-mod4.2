@@ -8,3 +8,5 @@ compania.addImportaciones(importacion1);
 compania.addImportaciones(importacion2);
 console.log(compania.getImportacionesTotales()); // 2
 console.log(compania.getSumaTotal());
+
+//Comentario
